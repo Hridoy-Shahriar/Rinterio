@@ -31,8 +31,10 @@
         --color-light-grey-custom: #737373;
         --color-dark-grey-custom: #494949;
         --color-card-border: #e9e9e9;
+        --color-anchor-color: #e9e9e9;
         --color-heading-color: #212121;
         --color-card-heading-color: #1c1c1c;
+        --color-footer-bg: #1c1c1c;
         --color-body-color: #f4f4f4;
         --color-card-bg-pink: #e7c1d3;
         --color-card-bg-yellow: #efda6e;
@@ -1275,12 +1277,220 @@
 
       <!-- Let’s Discuss Next Project -->
       <section
-        class="bg-[url(./assets/background.png)] bg-no-repeat bg-cover bg-center py-8 md:py-[72px] lg:py-[100px]"
-      ></section>
+        class="bg-[url(assets/background.jpg)] bg-no-repeat bg-cover py-8 md:py-[72px] lg:py-[100px] border-[7px] border-white"
+      >
+        <div
+          class="w-11/12 md:max-w-[674px] lg:max-w-[970px] mx-auto flex flex-col gap-6 md::gap-8"
+        >
+          <!-- Test Content Starts Here -->
+          <div class="flex flex-col justify-between items-center">
+            <button
+              class="flex gap-2 items-center bg-primary-color/20 rounded-3xl font-bold cursor-pointer mx-auto lg:mx-0 py-2 px-4 mb-4 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+              >
+                <path
+                  d="M16.5564 9.00278H1.00002"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.9279 4.14623C12.9279 4.14623 17.2472 7.79392 17.2472 9.00301C17.2472 10.212 12.9278 13.8597 12.9278 13.8597"
+                  stroke="#494949"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Let’s Connect
+            </button>
+            <h1
+              class="text-2xl md:text-[32px] lg:text-[40px] font-bold text-center mb-6 text-heading-color [-webkit-text-stroke:1px_#212121]"
+            >
+              Let’s Discuss Next Project
+            </h1>
+            <p
+              class="text-sm md:text-base font-medium text-dark-grey-custom text-center mx-auto lg:mx-0 md:max-w-[680px]"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                placeholder="First Name*"
+                id="first-name"
+                class="col-span-2 md:col-span-1 p-5 bg-white border border-card-border rounded-full"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                id="last-name"
+                class="col-span-2 md:col-span-1 p-5 bg-white border border-card-border rounded-full"
+              />
+              <input
+                type="Phone"
+                placeholder="Phone Number*"
+                id="phone"
+                class="col-span-2 md:col-span-1 p-5 bg-white border border-card-border rounded-full"
+              />
+              <input
+                type="email"
+                placeholder="Email ID*"
+                id="email"
+                class="col-span-2 md:col-span-1 p-5 bg-white border border-card-border rounded-full"
+              />
+
+              <textarea
+                class="textarea col-span-2 w-full h-60 p-5 border border-card-border rounded-4xl text-base"
+                id="message"
+                placeholder="Write your message here"
+              ></textarea>
+            </form>
+          </div>
+          <button
+            class="flex gap-2 items-center justify-center bg-primary-color py-3 px-5 rounded-4xl text-xl font-extrabold cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95"
+          >
+            <a>Send Mail</a>
+            <span class="bg-black p-[10px] rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M12.0109 2.10278L1.00728 13.0991"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- Let’s Discuss Next Project Ends Here -->
     </main>
     <!-- Main Section Ends Here-->
     <!-- -------------------------->
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-footer-bg py-[72px] lg:py-[100px]">
+      <div
+        class="w-11/12 md:max-w-[700px] lg:max-w-[1170px] mx-auto flex flex-col md:items-center gap-8 md:gap-12"
+      >
+        <div>
+          <button
+            class="flex mx-auto gap-2 items-center text-[28px] lg:text-[32px] font-extrabold cursor-pointer mb-4"
+          >
+            <span class="bg-primary-color p-[10px] rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M12.007 2.05932L1.0033 13.0557"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <p class="text-anchor-color">Rinterio</p>
+          </button>
+          <p
+            class="font-medium text-light-grey-custom text-center md:max-w-[680px]"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Anchor links -->
+        <ul
+          class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-[100px] lg:gap-[120px]"
+        >
+          <li
+            class="cursor-pointer text-anchor-color hover:underline hover:underline-offset-4"
+          >
+            <a href="">Home</a>
+          </li>
+          <li
+            class="cursor-pointer text-anchor-color hover:underline hover:underline-offset-4"
+          >
+            <a href="">Services</a>
+          </li>
+          <li
+            class="cursor-pointer text-anchor-color hover:underline hover:underline-offset-4"
+          >
+            <a href="">Portfolio</a>
+          </li>
+          <li
+            class="cursor-pointer text-anchor-color hover:underline hover:underline-offset-4"
+          >
+            <a href="">Blogs</a>
+          </li>
+          <li
+            class="cursor-pointer text-anchor-color hover:underline hover:underline-offset-4"
+          >
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+        <button
+          class="flex gap-2 items-center justify-center bg-primary-color py-3 px-5 rounded-4xl text-xl font-extrabold cursor-pointer hover:shadow-lg transition-all duration-300 ease-in-out active:scale-95"
+        >
+          <a>Book Consult</a>
+          <span class="bg-black p-[10px] rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                d="M12.0109 2.10278L1.00728 13.0991"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6.01123 1.23212C6.01123 1.23212 11.6449 0.759102 12.4996 1.6143C13.3542 2.4695 12.8773 8.10289 12.8773 8.10289"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
